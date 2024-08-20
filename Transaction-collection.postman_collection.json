@@ -1,0 +1,400 @@
+{
+	"info": {
+		"_postman_id": "42e20c9a-2bfc-4c91-8f3b-3f7d9f9ff694",
+		"name": "Transaction-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16851778"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"badarawuhi1234@gmail.com\",\r\n  \"password\": \"123123aa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/accounts/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accounts",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"badarawuhi12345@gmail.com\",\r\n  \"password\": \"123123aa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/accounts/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"accounts",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "367"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Aug 2024 02:41:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": \"910ab44d-53cb-4180-b240-ef2dad9407fe\",\n        \"email\": \"badarawuhi12345@gmail.com\",\n        \"password\": \"$2a$10$1wGiysmTsrJf1NjRlOP0Y.kFyjQUOm7oPtvJ8cp9cNN.lgiSRBuuq\"\n    },\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI5MTBhYjQ0ZC01M2NiLTQxODAtYjI0MC1lZjJkYWQ5NDA3ZmUiLCJpYXQiOjE3MjQxMjE2OTksImV4cCI6MTcyNDEyNTI5OX0.l3HAGStYV_lIsTddFho3gBrxKOMjIP2tFUU2z5EkR8M\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"badarawuhi1234@gmail.com\",\r\n  \"password\": \"123123aa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/accounts/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accounts",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"testuser@mail.com\",\r\n  \"password\": \"asdf123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/api/accounts/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"api",
+								"accounts",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "204"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 19 Aug 2024 04:28:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJkNTA1YjlhMS1lNDVlLTQxMjAtYjU0Yy1hMjM1NmQyNDNhOTkiLCJpYXQiOjE3MjQwNDE2ODgsImV4cCI6MTcyNDA0NTI4OH0.t4P1aSQKM8wTIOsVBtEOomP0g0u40Z1pSmT_JCvN1wM\"\n}"
+				},
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"badarawuhi1234@gmail.com\",\r\n  \"password\": \"123123aa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/accounts/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"accounts",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "204"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Aug 2024 02:41:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4NTE2YjZlOC0wNzkxLTQyMjItYjNlYi1kMDJmOWQ3OGEzNGUiLCJpYXQiOjE3MjQxMjE3MDYsImV4cCI6MTcyNDEyNTMwNn0.N9kFY93ciQ7qkXSJ7nsMMzFSxPDGQj8CmpSlIAvDFYw\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4NTE2YjZlOC0wNzkxLTQyMjItYjNlYi1kMDJmOWQ3OGEzNGUiLCJpYXQiOjE3MjQxMjAwMTksImV4cCI6MTcyNDEyMzYxOX0.wBdp5l0yXIj5EXtq_lescZ95lUHZXOYc5XSsV_IEuWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/accounts/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accounts",
+						"accounts"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Account",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/accounts/accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"accounts",
+								"accounts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "138"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Aug 2024 02:41:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"accounts\": [\n        {\n            \"id\": \"b1899519-1665-4f09-ba2a-7cc4e3d5f574\",\n            \"type\": \"Stripe\",\n            \"balance\": 900,\n            \"userId\": \"8516b6e8-0791-4222-b3eb-d02f9d78a34e\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI4NTE2YjZlOC0wNzkxLTQyMjItYjNlYi1kMDJmOWQ3OGEzNGUiLCJpYXQiOjE3MjQxMjAwMTksImV4cCI6MTcyNDEyMzYxOX0.wBdp5l0yXIj5EXtq_lescZ95lUHZXOYc5XSsV_IEuWg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/accounts/transactions/b1899519-1665-4f09-ba2a-7cc4e3d5f574",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"accounts",
+						"transactions",
+						"b1899519-1665-4f09-ba2a-7cc4e3d5f574"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Transaction",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/accounts/transactions/b1899519-1665-4f09-ba2a-7cc4e3d5f574",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"accounts",
+								"transactions",
+								"b1899519-1665-4f09-ba2a-7cc4e3d5f574"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "content-type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "content-length",
+							"value": "145"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 20 Aug 2024 02:38:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=72"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"transactions\": {\n        \"id\": \"38352def-5427-4678-b506-a39ba595814a\",\n        \"accountId\": \"b1899519-1665-4f09-ba2a-7cc4e3d5f574\",\n        \"amount\": 100,\n        \"status\": \"Success\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
