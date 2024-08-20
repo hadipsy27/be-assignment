@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  account-manager:
+    build: ./account-manager
+    environment:
+      DATABASE_URL: postgres://postgres:password123@postgres:5432/postgres
+      SUPABASE_URL: https://fwpmreczzxpliuzgsirs.supabase.co
+      SUPABASE_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ3cG1yZWN6enhwbGl1emdzaXJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjM5OTE0NDYsImV4cCI6MjAzOTU2NzQ0Nn0.ZRNqVp7E6G2KmB0ZbUmL5rgdsR-vBcnBf8hi8vxRZpw
+      JWT_SECRET: hkrwhjekrmndyywmmmbfhjsjkjhdkfsdjfsjdgfjcxbjfbsjd
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+
+  payment-manager:
+    build: ./payment-manager
+    environment:
+      DATABASE_URL: postgres://postgres:password123@postgres:5432/postgres
+      ACCOUNT_MANAGER_URL: http://account-manager:3000
+    depends_on:
+      - account-manager
+      - postgres
+    ports:
+      - "3001:3001"
